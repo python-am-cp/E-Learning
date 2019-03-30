@@ -1,7 +1,5 @@
 # E-Learning
 
-Ссылка на идеи 
-https://docs.google.com/document/d/1sDDCtETxznTV05diTGJTrnaWie2v0sr33fwHWNfIMzk/edit
+[Идеи](https://docs.google.com/document/d/1sDDCtETxznTV05diTGJTrnaWie2v0sr33fwHWNfIMzk/edit)
 
-Ссылка на технологии
-https://docs.google.com/spreadsheets/d/1m4p9vhjGmtcfD2Pj-E9EKJB2-egoiqjfA8umrv5QmZ0/edit?usp=sharing
+[Технологии](https://docs.google.com/spreadsheets/d/1m4p9vhjGmtcfD2Pj-E9EKJB2-egoiqjfA8umrv5QmZ0/edit?usp=sharing)
