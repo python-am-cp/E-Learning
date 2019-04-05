@@ -1,4 +1,6 @@
 .idea
 venv/
 project/__pycache__/
+application/__pycache__/
+application/migrations/__pycache__/
 db.sqlite3
