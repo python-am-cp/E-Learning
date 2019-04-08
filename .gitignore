@@ -3,7 +3,7 @@
 venv/
 
 # sqlite db
-db.sqlite3
+**/db.sqlite3
 
 # pycache directories
 **/__pycache__/
