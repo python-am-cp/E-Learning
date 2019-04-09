@@ -7,7 +7,7 @@ class Map(models.Model):
 
 class Block(models.Model):
     map_id = models.ForeignKey(Map, on_delete=models.CASCADE, default=None)
-    image = 0  # mock field
+    image = models.ImageField(default=0)
 
 
 class MapLevel(models.Model):
