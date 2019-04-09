@@ -7,7 +7,7 @@ class Map(models.Model):
 
 class Block(models.Model):
     map_id = models.ForeignKey(Map, on_delete=models.CASCADE, default=None)
-    image = models.ImageField(default=0)
+    image = 0  # mock field
 
 
 class MapLevel(models.Model):
@@ -17,7 +17,7 @@ class MapLevel(models.Model):
 
 class User(models.Model):
     name = models.CharField(max_length=50, default=None)  # User name
-    email = models.EmailField(max_length=50, default=None)  # Email
+    email = models.EmailField(max_length=50, default=None,unique=True)  # Email
     password = models.CharField(max_length=50, default=None)  # Password
     level = models.IntegerField(default=1)  # User level
     map_level_id = models.ForeignKey(MapLevel, on_delete=models.CASCADE, default=None)
