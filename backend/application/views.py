@@ -8,12 +8,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 
 
-# serializer registragion
+# serializer registration
 class UserList(generics.ListAPIView):
     queryset = User.objects.all()
-    serializer_class = UserSerializer'
-	
-	
+    serializer_class = UserSerializer
+
+
 # another one
 def signup(request):
     if request.method == 'POST':

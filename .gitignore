@@ -1,6 +1,6 @@
 # PyCharm created files
 **/.idea/
-venv/
+**/venv/
 
 # sqlite db
 **/db.sqlite3
