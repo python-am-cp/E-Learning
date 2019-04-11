@@ -2,6 +2,15 @@ dist: xenial
 language: python
 python:
 - '3.7'
+deploy:
+  provider: heroku
+  buildpack: python
+  api_key: 
+    secure: 9ded86e6-dbca-449e-9bad-048587c0b5f7
+  app: amcplearnpython
+  on:
+    repo: python-am-cp/E-Learning
+    branch: heroku
 install:
 - pip install -r requirements-build.txt
 before_script:
@@ -9,6 +18,3 @@ before_script:
 - python manage.py migrate
 script:
 - python manage.py test
-after_success:
-  - bash test.sh
-  
