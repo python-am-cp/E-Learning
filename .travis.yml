@@ -5,8 +5,6 @@ python:
 deploy:
   provider: heroku
   buildpack: python
-  api_key:
-    secure: API_KEY
   app: amcplearnpython
   on:
     repo: python-am-cp/E-Learning
