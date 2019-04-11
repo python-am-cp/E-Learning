@@ -52,12 +52,16 @@ body {
     z-index: 1;
     background: url(img/im1.jpg) center center no-repeat;
     background-size: cover;
-    padding: 500px 0 200px;
-
+    padding: 500px 0 310px;
+    padding-top:240px;
+    padding-right: 200px;
 }
 
 .promo-block-divider{
     color: #E0FFFF;
+}
+.container{
+
 }
 
 .textarea {
