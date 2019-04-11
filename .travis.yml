@@ -5,6 +5,8 @@ python:
 deploy:
   provider: heroku
   buildpack: python
+  api_key:
+    secure: Hb9FwnSbqJBTDDTka7Sz/4oSmahWscraoTblWFZ2MQ4X46kxEFsRrzPn1uB15YqZwaUCQMBMvVXiDWIUAcEW0U4ZeTev4XctZ4d7w4EIbvgYo/FOYFQNFSk/IysO8Y6Z9q0U+WWbUrjDtnHtVNveZ2PzwBjBaI8UhJMlHhGfpNuO77CPie1n0NYxa9gqUG+ywQjohbclAhPuAc5INfreppObxZUoyR97Esra5OIBnrGo5HB3B33KiXPadLbn491R84wEphYa7NsPKEOg0G9VUBtRIfwsZYKjTag+YAVP5aGNuYKkabrPUBKoirZC+ZkDhqlQRaQofZf7wDjWycaJpziqL/r6OpqZ3GIqP8BtO46Hs+YgKIilTm7BzMegf/J1ov/64Y/Y3vAgX0Ni5YYwvGvyQ0o32pwa6M17CDHVorNiPOzM4DsmiKQqwvvCosyC9/HoD9ti16+EVQ/S17MsjOBwdwiAqvq7NrUKBSKTY5iLd6jOREaNy+MTpsBbfgDWqHgYagGRCN7zReImhj+ahFm2yqsYnchtFrxjIMxJS5Mf5aAXAhqLu4hO1O9JvZTfk+aaaaTns14YudPHpY0TCOrk/rzLpo16s+kPX0HhNSFdLAuo+g/fbh+zM+Pwca0vwh4eayxqJnG0/qFRZt7CoxlqZNvC8kEUualqVm4fLFw=
   app: amcplearnpython
   on:
     repo: python-am-cp/E-Learning
