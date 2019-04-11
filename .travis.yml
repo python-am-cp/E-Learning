@@ -9,6 +9,7 @@ deploy:
   app: amcplearnpython
   on:
     repo: python-am-cp/E-Learning
+  on: heroku
 install:
 - pip install -r requirements-build.txt
 before_script:
