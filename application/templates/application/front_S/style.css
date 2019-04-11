@@ -7,15 +7,18 @@ body {
 }
 .navbar {
     background-color: #09151A;
+
 }
 .navbar-brand{
     color: #FFFFFF;
-     margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
 }
 .nav{
+
     margin:  0 20px 0 0;
 }
 .nav-item{
+     font-family: "Segoe UI";
     margin:  0 10px 0 10px;
 }
 
@@ -40,9 +43,11 @@ body {
 }
 
 .nav{
+
     color: #FFFFFF;
 }
 .promo-block {
+    font-family: "Segoe UI";
     position: relative;
     z-index: 1;
     background: url(img/im1.jpg) center center no-repeat;
@@ -53,6 +58,7 @@ body {
     color: #FFFFFF;
 }
 .textarea {
+   
     width: 350px;
     height: 140px;
     margin: 5px 0 10px;
