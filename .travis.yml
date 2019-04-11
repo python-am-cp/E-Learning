@@ -5,8 +5,8 @@ python:
 deploy:
   provider: heroku
   buildpack: python
-  api_key:
-    secure: LjcDaip32H39arswRrz+KbAdm97gIHUtYQE2N9SbW6q/Cb0NyG1Rk7MYgwrEhUkQEgv8Xu7f5rhu6cdy7ZfKLBPjXV4WU4g0XYkzawLrZOQJbzkffGFqWP43PdyyYLhUYAvphhvX6AB4ddFHmlFncMMNS5E/Wgy1IDt5UihET4anzF5+DRon1AWXW9y4otK1ZereMTL5I1a/Bwo07KScMITcH2ISqvieyoB06wCPf3gQXUATaapCIwWnY2zX3WYpHGL5+iIRmhYMjyX1nadgGpRpcBdU6/xGM2lDlf0HC9xUJyLp7kfs6sI67Rxwqc5EsYZaK2eT3Z69AshQG0T9RnPv7Bk21ytn/EvJ+M5QE7wIindOL2cf9N7DaHku/WQMuTsgRzw2oTjnqI3gBG7KmMWprkoFedC/DqeBDRk1o9VLbGmluLo4zYxl/DU2eINNjrR4HuxHo1lEGR8lrv8zMrOGVZo5tQoxqXBf71gzFdcgc93hSGgw0knjqvQbfaO5kt/Jtq5bIoMMCekFZ136KfG5fOJ7wzfQbgNCAltiBpaZ1QRe9im5ivMcAeFm5+cH5VJulIuKb5/PvD46LQiLWtEaPPCJ84UxL2KdkSIqGEg+/4m02RF2aDJ8qGwNlb+oYA1q7K+IIobfygSqlnQJCzc8UgYCk9/cLWCbdIDer6c=
+  api_key: 
+    secure: 9ded86e6-dbca-449e-9bad-048587c0b5f7
   app: amcplearnpython
   on:
     repo: python-am-cp/E-Learning
