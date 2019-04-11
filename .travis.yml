@@ -11,6 +11,8 @@ deploy:
   on:
     repo: python-am-cp/E-Learning
     branch: heroku
+  run:
+  - "python manage.py migrate"
 install:
 - pip install -r requirements-build.txt
 before_script:
