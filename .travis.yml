@@ -2,14 +2,6 @@ dist: xenial
 language: python
 python:
 - '3.7'
-deploy:
-  provider: heroku
-  buildpack: python
-  api_key: OBWvJNCofjIEOyG/kRvRosdjJwh1YyAlcMaIu9CD/qeFBu03APZPK9Q1oNSZAvK26eBb5pSI14HoG0gv0cenXLAnY5ULTX8jIB3xzHNcB0Rz552ytXupQHv/565t1n1baA5loZqp1jp38U3GPHmmFuD8Nv4XyoHKpeCUWimDaTMbNjap/TwdJX9rRfTUwKf4c0xTD1e+xg85scA+CdwAadgqsg3MJRftMsq2gZsNxMWjGmhB2GK0raIRrF6s3y4EjXl9JBAiyq5QQcQuWWMjLjPRR2+emnJpWKg08paryFQpNaENTYtn9iEQZJH3fG0OL5TF35ewRJceb1jE8BzRud13ldS6a8HqL1aElIb2llj+Gc7BueS78JK9SphoCnEcAkkP7a65Idelped8RN7bfQ2U2g5gDeoS9LaBNQDyE7JKtjqokH2TiNrhH0mYCON8WnRnboiPEn2p+1jO5lTogmGeJQ0Jk5VRxrLnm8kbmozMQSVrXpp8WXOEGvSkZXHs6YeL2TgD/cR8Lwh477utXSpWa4IEfexpQfKwiwlc9J6JYFxgdIM0Rb4T1KMRexadkWiP0zRJu4FNOYNbiePNiafGttW6fl4Pp7Mr+1E2gONZlIXdZ2d4OxeTL79SCyVDe6MmiASpqwa2AybvBCB7BtQmPpx4aHBXP6Kw2Q3M2e4=
-  app: amcplearnpython
-  on:
-    repo: python-am-cp/E-Learning
-    branch: heroku
 install:
 - pip install -r requirements-build.txt
 before_script:
@@ -17,3 +9,6 @@ before_script:
 - python manage.py migrate
 script:
 - python manage.py test
+after_success:
+  - bash test.sh
+  
