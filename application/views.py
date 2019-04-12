@@ -9,7 +9,6 @@ from .serializer import UserSerializer
 from django.shortcuts import render, redirect
 
 
-
 # serializer registragion
 # class UserList(generics.ListAPIView):
 #     queryset = User.objects.all()
@@ -26,7 +25,11 @@ def show_signup(request):
         user.save()
         return HttpResponse('200')
 
-    return render(request, 'application/signup.html')
+    return render(request, 'signup.html')
+
+
+def show_mainwidnow(request):
+    return render(request, 'mainwindow.html')
 
 
 

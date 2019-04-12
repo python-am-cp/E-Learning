@@ -6,4 +6,5 @@ from application import views
 urlpatterns = [
     path('signup/', views.show_signup),
     path('admin/', admin.site.urls),
+    path('mainwindow/', views.show_mainwidnow),
 ]
