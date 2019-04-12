@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import * as Auth from './components/pages/Authentication'
+import * as Auth from '@/components/pages/Authentication'
 // Pages
-import Home from './components/pages/Home'
-import Authentication from './components/pages/Authentication/Authentication'
+import Home from '@/components/pages/Home/Home'
+import Authentication from '@/components/pages/Authentication/Authentication'
 Vue.use(Router)
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',

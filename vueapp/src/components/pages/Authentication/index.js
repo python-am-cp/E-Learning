@@ -15,9 +15,9 @@ export default {
 
         if (redirect) router.push(redirect)
       }).catch(({response: {data}}) => {
-      context.snackbar = true
-      context.message = data.message
-    })
+        context.snackbar = true
+        context.message = data.message
+      })
   },
 
   signup (context, credentials, redirect) {
@@ -29,9 +29,9 @@ export default {
 
         if (redirect) router.push(redirect)
       }).catch(({response: {data}}) => {
-      context.snackbar = true
-      context.message = data.message
-    })
+        context.snackbar = true
+        context.message = data.message
+      })
   },
 
   checkAuthentication () {
