@@ -12,6 +12,20 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+   <article class="course-layout" fixed = top data-taskid="1">
+     <div class="theory" >
+       <b-row>
+         <b-col cols="8">
+           <div class="main-theory-title">
+             <h1 class="theory-title">Типы данных</h1>
+           </div>
+         </b-col>
+         <b-col cols="4">
+
+         </b-col>
+       </b-row>
+     </div>
+   </article>
   </div>
 </template>
 <script>
@@ -22,6 +36,20 @@
     //  background: url('./img/im1.jpg');
     width: 100%;
     height: 100%;
+  }
+  .theory{
+    text-align: start;
+  }
+  //text-align : center
+  .course-layout {
+    margin: 0 auto;
+    padding-top: 7%;
+    display: flex;
+    flex-grow: 1;
+    height: 1200px;
+    width: 70%;
+    font-size: 14px;
+    background-color: #FFFFFF;
   }
   .NB {
     background-color: #09151A;
@@ -39,16 +67,10 @@
   .nav-item{
     margin:  0 10px 0 10px;
   }
-  .promo-block {
-    position: relative;
-    z-index: 1;
-    background-size: cover;
-    padding: 320px 200px 230px 5%;
+  .theory-title{
+    color: black;
+    font-size: x-large;
+    text-align: center;
   }
-  .promo-block-title{
-    color:#E0FFFF;
-  }
-  .promo-block-text{
-    color:#E0FFFF;
-  }
+
 </style>
