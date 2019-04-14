@@ -4,12 +4,19 @@ import * as Auth from '@/components/pages/Authentication'
 // Pages
 import Home from '@/components/pages/Home/Home'
 import Authentication from '@/components/pages/Authentication/Authentication'
+import Mainwindow from '@/components/pages/Mainwindow/Mainwindow'
+import Education from '@/components/pages/Education/Education'
 Vue.use(Router)
 const router = new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
+      name: 'Mainwindow',
+      component: Mainwindow
+    },
+    {
+      path: '/home',
       name: 'Home',
       component: Home,
       meta: {
@@ -20,7 +27,13 @@ const router = new Router({
       path: '/login',
       name: 'Authentication',
       component: Authentication
+    },
+    {
+      path: '/edu',
+      name: 'Education',
+      component: Education
     }
+
   ]
 })
 router.beforeEach((to, from, next) => {

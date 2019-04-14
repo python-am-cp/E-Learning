@@ -24,6 +24,7 @@ export default {
       background-color: $background-tint;
       opacity: .3;
       z-index: -1;
+      color: powderblue;
     }
   }
 </style>

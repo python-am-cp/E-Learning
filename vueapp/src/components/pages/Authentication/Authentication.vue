@@ -62,6 +62,7 @@
 <script>
 import Authentication from './index'
 export default {
+  name: 'login',
   data () {
     return {
       snackbar: false,
