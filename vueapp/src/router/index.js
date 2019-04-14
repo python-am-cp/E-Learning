@@ -4,7 +4,7 @@ import * as Auth from '@/components/pages/Authentication'
 // Pages
 import Home from '@/components/pages/Home/Home'
 import Authentication from '@/components/pages/Authentication/Authentication'
-import First from '@/components/pages/Authentication/First'
+import First from '@/components/pages/Level/Level'
 Vue.use(Router)
 const router = new Router({
   mode: 'history',
@@ -18,8 +18,8 @@ const router = new Router({
       }
     },
     {
-      path: '/first',
-      name: 'First',
+      path: '/level',
+      name: 'Level',
       component: First,
       meta: {
         requiredAuth: true

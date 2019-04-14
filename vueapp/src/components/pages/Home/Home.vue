@@ -10,7 +10,7 @@
             <b-nav-item class="nav-item" href=""><span style="color:#E0FFFF">ELP</span></b-nav-item>
             <b-nav-item class="nav-item" href=""><span style="color:#E0FFFF">О ПРОЕКТЕ</span></b-nav-item>
             <b-nav-item class="nav-item" href="login"><span style="color:#E0FFFF">ВХОД</span></b-nav-item>
-            <b-nav-item class="nav-item" href=""><span style="color:#E0FFFF">НАЧАТЬ ОБУЧЕНИЕ</span></b-nav-item>
+            <b-nav-item class="nav-item" href="level"><span style="color:#E0FFFF">НАЧАТЬ ОБУЧЕНИЕ</span></b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -61,7 +61,6 @@ export default {
 </script>
 <style  lang="scss" scoped>
  body {
-  //  background: url('./img/im1.jpg');
     width: 100%;
     height: 100%;
   }
@@ -85,7 +84,7 @@ export default {
     position: relative;
     z-index: 1;
     background-size: cover;
-    padding: 320px 200px 230px 5%;
+    padding: 20% 200px 230px 6%;
   }
   .promo-block-title{
     color:#E0FFFF;
