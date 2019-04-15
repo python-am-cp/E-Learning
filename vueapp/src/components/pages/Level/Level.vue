@@ -10,11 +10,11 @@
         <b-nav-form>
 
         </b-nav-form>
-        <b-nav-item-dropdown text="Типы данных">
-          <b-dropdown-item href="#"><span style="color:#E0FFFF">EN</span></b-dropdown-item>
-          <b-dropdown-item href="#"><span style="color:#E0FFFF">ES</span></b-dropdown-item>
-          <b-dropdown-item href="#"><span style="color:#E0FFFF">RU</span></b-dropdown-item>
-          <b-dropdown-item href="#"><span style="color:#E0FFFF">FA</span></b-dropdown-item>
+        <b-nav-item-dropdown class="Switch-stap">
+          <template slot="button-content"><span style="color:#33678f"><b>Типы и модель данных</b></span></template>
+          <b-dropdown-item href="#1"><span style="color:#33678f">1.Типы данных в Python</span></b-dropdown-item>
+          <b-dropdown-item href="#2"><span style="color:#33678f">2.Модель данных</span></b-dropdown-item>
+          <b-dropdown-item href="#3"><span style="color:#33678f">3.Изменяемые и неизменяемые типы данных</span></b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-form>
 
@@ -33,7 +33,53 @@
        <b-row class="text-center">
          <b-col >
            <div class="main-theory-title">
-             <h1 class="theory-title">Типы данных</h1>
+             <h4 class="theory-title">Типы данных в Python</h4>
+             <div class="texting">
+             <p>В Python типы данных можно разделить на встроенные в интерпретатор (built-in) и не встроенные, которые можно использовать при импортировании соответствующих модулей.</p>
+
+             <h6>К основным встроенным типам относятся:</h6>
+             <ul>
+               <li>None (неопределенное значение переменной)</li>
+               <li>Логические переменные (Boolean Type)</li>
+               <li>Числа (Numeric Type)
+                 <ul>
+                  <li>int – целое число</li>
+                  <li>float – число с плавающей точкой</li>
+                  <li>complex – комплексное число</li>
+                 </ul>
+               </li>
+               <li>Списки (Sequence Type)
+                 <ul>
+                   <li>list – список</li>
+                   <li>tuple – кортеж</li>
+                   <li>range – диапазон</li>
+                 </ul>
+               </li>
+               <li>Строки (Text Sequence Type )
+                 <ul>
+                   <li>str</li>
+                 </ul>
+               </li>
+               <li>Бинарные списки (Binary Sequence Types)
+               <ul>
+                 <li>bytes – байты</li>
+                 <li>memoryview – специальные объекты для доступа к внутренним данным объекта через protocol buffer</li>
+                 <li>bytearray – массивы байт</li>
+               </ul>
+             </li>
+               <li> Множества (Set Types)
+                 <ul>
+                   <li> set – множество</li>
+                   <li>frozenset – неизменяемое множество</li>
+                 </ul>
+               </li>
+               <li> Словари (Mapping Types)
+                 <ul>
+                   <li> dict – словарь</li>
+                 </ul>
+               </li>
+             </ul>
+             </div>
            </div>
          </b-col>
        </b-row>
@@ -55,6 +101,15 @@
   }
   .Level-container{
 
+  }
+  .texting{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .Switch-stap{
+
+    text-align: center;
   }
   .theory{
     text-align: start;
