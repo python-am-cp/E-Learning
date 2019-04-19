@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'application',  # include app
-    #'django_summernote',
-    'rest_framework',  # add django rest framework
+    'users',
+    'rest_framework',
     #'rest_framework_authtoken',
     #'djoser',
 ]
