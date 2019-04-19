@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-2">
     <v-container>
       <router-view/>
     </v-container>
@@ -24,6 +24,7 @@ export default {
       background-color: $background-tint;
       opacity: .3;
       z-index: -1;
+      color: powderblue;
     }
   }
 </style>

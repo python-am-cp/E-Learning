@@ -51,7 +51,7 @@
       </v-form>
     </div>
 
-    <v-snackbar timeout="6000"
+    <v-snackbar :timeout="6000"
                 bottom="bottom"
                 color="red lighten-1"
                 v-model="snackbar">
@@ -60,38 +60,39 @@
   </div>
 </template>
 <script>
-  import Authentication from './pages/Authentication/Authentication'
-  export default {
-    data () {
-      return {
-        snackbar: false,
-        validLogin: false,
-        validSignUp: false,
-        signUpVisible: false,
-        loginPasswordVisible: false,
-        signUpPasswordVisible: false,
-        rules: [ (value) => !!value || 'This field is required' ],
-        credentials: {
-          username: '',
-          password: ''
-        },
-        newUser: {
-          username: '',
-          password: ''
-        },
-        message: ''
-      }
-    },
-    methods: {
-      submitAuthentication () {
-        Authentication.authenticate(this, this.credentials, '/')
+import Authentication from './index'
+export default {
+  name: 'login',
+  data () {
+    return {
+      snackbar: false,
+      validLogin: false,
+      validSignUp: false,
+      signUpVisible: false,
+      loginPasswordVisible: false,
+      signUpPasswordVisible: false,
+      rules: [ (value) => !!value || 'This field is required' ],
+      credentials: {
+        username: '',
+        password: ''
       },
+      newUser: {
+        username: '',
+        password: ''
+      },
+      message: ''
+    }
+  },
+  methods: {
+    submitAuthentication () {
+      Authentication.authenticate(this, this.credentials, '/')
+    },
 
-      submitSignUp () {
-        Authentication.signup(this, this.newUser, '/')
-      }
+    submitSignUp () {
+      Authentication.signup(this, this.newUser, '/')
     }
   }
+}
 </script>
 <style lang="scss">
   @import "./../../../assets/styles";
