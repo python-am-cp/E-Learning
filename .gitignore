@@ -1,0 +1,9 @@
+# PyCharm created files
+**/.idea/
+**/venv/
+
+# sqlite db
+**/db.sqlite3
+
+# pycache directories
+**/__pycache__/
